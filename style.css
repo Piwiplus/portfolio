@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Merienda:wght@300..900&display=swap');
 
 #top-body{
-    text-shadow: 2px 2px 4px rgb(43, 43, 43);
-    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-align:left;
     margin-top: 250px;
-    font-size: 45;
+    margin-bottom: 250px;
+    font-size: 30;
 }
 
 body{
-    background-position: center;
     background-size:cover;
-    background-color: indianred;
-    background-position-x: center;
+      overflow-x: hidden; /* Cacher la barre de défilement horizontale */
+    background-image:url('background.jpg');
 }
 /*POLICE SP2CIAL POUR LE SITE*/
 .anonymous-pro-regular {
@@ -61,44 +61,142 @@ body{
     align-items:baseline;
     font-size: 40px;
 }
+p {
+  text-align: center;
+}
 
-  ul {
-    list-style-type: none;
-    margin: 0px;
-    display:inline-flex;
-    border-style: solid;
-    border-top: black;
-    border-left: black;
-  }
+h1 {
+  color: #ffffff;
+  margin-left: 20;
+  display: inline-block; 
+}
 
-  li a {
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 14px 16px;
-    display:inline;    
-    margin-left: 100px;
-  }
+nav ul {
+  list-style-type: none;
+  margin-left: 1300px;
+  padding: 0;
+}
 
-  li a:hover {
-    background-color: #fb9d9d;
-    margin-left: 100px;
-}  
+nav ul li {
+  display: inline;
+}
 
+nav ul li a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+}
 
-  ul {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    backdrop-filter: blur(20px);
-  }
+nav {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  position: relative;
+}
+
+nav ul li a:hover::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  bottom: -5px;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+#header {
+  left: 0%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  backdrop-filter: blur(0px); /* Initialiser sans flou */
+  transition: backdrop-filter 0.9s ease; /* Ajouter une transition pour une animation fluide */
+}
+
+.blurred {
+  backdrop-filter: blur(20px); /* Ajouter le flou après le premier scroll */
+}
 
    /* CUBE */
-    div.float {
+div.float {
     float: left;
     padding-left:130px;
-    }
+}
 
-    .carre { 
-    width:250px;
-    height:250px; 
-    }
+.carre {
+  width: 250px;
+  height: 250px;
+  box-shadow: 
+      -20px 20px 0px 0px rgba(255, 255, 255, 1), /* Ombre blanche portée sur la gauche (opaque) */
+      -21px 21px 0px 0px rgb(255, 255, 255); /* Bordure noire autour de l'ombre */
+  color: #ffffff; /* Couleur du texte */
+  display: flex; /* Permet de centrer le contenu */
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  text-align: center;
+  font-size:xx-large;
+  justify-content: center;
+  align-items: center;
+  background-color:black;
+}
+
+.triangle {
+  width: 750px;
+  height: 250px;
+  box-shadow: 
+      -20px 20px 0px 0px rgba(255, 255, 255, 1), /* Ombre blanche portée sur la gauche (opaque) */
+      -21px 21px 0px 0px rgb(255, 255, 255); /* Bordure noire autour de l'ombre */
+  color: #ffffff; /* Couleur du texte */
+  display: flex; /* Permet de centrer le contenu */
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  text-align: center;
+  font-size:xx-large;
+  justify-content: center;
+  align-items: center;
+  margin-left: 350px;
+  background-color:black;
+}
+/* _0f20435c-81a3-40ee-ae99-2e25d85cb07a-removebg-preview 1 */
+.imageGameB{
+  position: absolute;
+  width: 416.55px;
+  height: 415.97px;
+  left: 642.29px;
+  top: 692px;
+  
+  background: url(_0f20435c-81a3-40ee-ae99-2e25d85cb07a-removebg-preview.png);
+  transform: rotate(20.15deg);
+  
+}
+
+.container {
+  display: flex;
+  justify-content: center; /* Centre les cubes horizontalement */
+}
+    
+
+.carrePro {
+  margin: 200px;
+  width:350px;
+  height: 550px;
+  box-shadow: 
+      -20px 20px 0px 0px rgba(255, 255, 255, 1), /* Ombre blanche portée sur la gauche (opaque) */
+      -21px 21px 0px 0px rgb(255, 255, 255); /* Bordure noire autour de l'ombre */
+  color: #ffffff; /* Couleur du texte */
+  display: flex; /* Permet de centrer le contenu */
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  text-align: center;
+  font-size:xx-large;
+  justify-content: center;
+  align-items: center;
+  background-color:black;
+}
